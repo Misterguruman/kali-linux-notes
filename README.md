@@ -1,7 +1,7 @@
-# LINUX COMMAND NOTES AND KALI "REMEMBER THESE" AREA
+# kali-linux-notes: 
+## A collection of Kali-specific and general linux commands to learn/remember on your hacker journey
 
 ### Created: 3/14/2021
-
 ### Author : Joseph Langford
 
 I'm trying to make this a git repository to share with others. Linking the markdown so I don't have to keep searching for it:
@@ -49,9 +49,9 @@ I'm trying to make this a git repository to share with others. Linking the markd
 > essentiall you can run anything and {} will be replaced the results of find
 > you can run multiple commands by stringing -execs together, see wrap up
 
-# WRAP UP EXAMPLE: Take every htb notes file you've made in the last 30 days, copy them to a desktop folder and create one large file on your desktop to review
+## WRAP UP EXAMPLE: Take every htb notes file you've made in the last 30 days, copy them to a desktop folder and create one large file on your desktop to review
 	
 	find /home/mike/htb/boxes -type f -name "*notes*" -mtime -30 -exec cp {} /home/mike/Desktop/notes \; -exec cat {} >> /home/mike/Desktop/notes/masternotes.txt \;
 
-# IMPORTANT: While these examples are using logs as an example. It's bad form to use this method to clear log files, see log rotate
-# ALSO:      Don't use the -exec rm {} \; with sudo unless you are also comfortable driving with your eyes closed. It's just risky regardless
+### IMPORTANT: While these examples are using logs as an example. It's bad form to use this method to clear log files, see log rotate
+### ALSO:      Don't use the -exec rm {} \; with sudo unless you are also comfortable driving with your eyes closed. It's just risky regardless
